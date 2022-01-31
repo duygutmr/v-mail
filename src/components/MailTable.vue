@@ -5,14 +5,13 @@
         v-for="email in unArchieved"
         :key="email.id"
         :class="['clickable', email.read ? 'read' : '']"
-        @click="openEmail(email)"
       >
         <td>
           <input type="checkbox" />
         </td>
         <td>{{ email.from }}</td>
         <td>
-          <p>
+          <p @click="openEmail(email)">
             <strong> {{ email.subject }}</strong>
           </p>
         </td>
@@ -79,4 +78,5 @@ export default {
 </script>
 
 <style>
+
 </style>
