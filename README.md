@@ -1,4 +1,4 @@
-# vue-3-demo
+# v-mail
 
 ## Project setup
 ```
